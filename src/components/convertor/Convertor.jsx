@@ -21,10 +21,10 @@ const Convertor = () => {
       });
   };
 
-  let oneCurrency = true;
+  // let oneCurrency = true;
   useEffect(() => {
-    if (oneCurrency) {
-      oneCurrency = false;
+    // if (oneCurrency) {
+    //   oneCurrency = false;
     axios
       .get(`${info_api_url}`)
       .then((res) => {
@@ -33,7 +33,7 @@ const Convertor = () => {
       .catch((err) => {
         console.log(err.message);
       });
-    }
+    // }
   }, []);
 
   let counteryCodes = [];

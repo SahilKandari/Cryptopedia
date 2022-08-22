@@ -21,10 +21,10 @@ const Graph = () => {
   //     // labels: poolingData.values?.map((item, index) => index),
   //   });
  
-  let oneCurrency = true;
+  // let oneCurrency = true;
   useEffect(() => {
-    if (oneCurrency) {
-      oneCurrency = false;
+    // if (oneCurrency) {
+    //   oneCurrency = false;
       axios
         .get(
           `${chart_api_url}timespan=${timeSpan}&rollingAverage=${timeFormat}&format=json`
@@ -36,7 +36,7 @@ const Graph = () => {
         .catch((err) => {
           console.log(err.message);
         });
-    }
+    // }
   }, [timeSpan, timeFormat]);
 
   return (

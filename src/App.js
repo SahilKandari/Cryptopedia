@@ -7,7 +7,7 @@ import Graph from "./components/graph/Graph";
 import Navigation from "./components/navigation/Navigation";
 import { Redirect, Route, Switch } from "react-router-dom";
 import Footer from "./components/footer/Footer";
-import 'font-awesome/css/font-awesome.css'
+// import 'font-awesome/css/font-awesome.css'
 
 function App() {
   return (
