@@ -1,0 +1,56 @@
+.convertor-section {
+  width: 101vw;
+  height: 100vh;
+  overflow-y: hidden;
+  background-color: #000000;
+  background-image: url("https://cdn.pixabay.com/photo/2018/01/16/01/02/cryptocurrency-3085139_960_720.jpg");
+  background-repeat: no-repeat;
+
+  background-position: 50vw 10vh;
+  background-size: 50% 100%;
+  align-items: center;
+}
+.convertor-image img {
+  height: 100vh;
+}
+.convertor-form{
+    display: flex;
+    justify-content: space-around;
+}
+.convertor-form input{
+    width: 30% !important;
+    
+}
+.convertor-form select{
+    width: 30% !important;
+    
+}
+.convertor-form select::-webkit-scrollbar {
+  display: none;
+}
+.convertor-button{
+display: flex;
+justify-content: center;
+
+}
+
+
+.convertor-bitcoin{
+background-color: #CBB779;
+
+border: 2px solid #A9ABB8;
+border-radius: 10px;
+box-shadow: 12px 12px 2px 1px #504927;
+margin-left: 15vw;
+width: 40%;
+}
+.convertor-bitcoin h2{
+color: #373a2a;
+font-size: 40px;
+
+
+}
+.convertor-bitcoin h3{
+   color: #2A2D3A;
+   font-size: 40px;
+}

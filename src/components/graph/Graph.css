@@ -1,0 +1,23 @@
+ .graph-section{
+    margin: 15vh 0;
+   
+ }
+ .graph-buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 50px;
+   
+    
+ }
+ .graph-buttons h5{
+   font-size: 19px;
+   font-weight: 700;
+   border-bottom: 2px solid grey;
+   width: fit-content;
+   padding-bottom: 10px;
+ }
+ .graph-chart{
+    border-left: 2px solid grey;
+    border-bottom: 2px solid grey;
+ }

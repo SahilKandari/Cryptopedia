@@ -1,0 +1,50 @@
+.navigation-section{
+    background-color: #474866;
+    padding: 5px 0;
+    position: fixed;
+    width: 101vw;
+    opacity: 0.9;
+    z-index: 10;
+   
+}
+
+.navigation-heading{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.navigation-heading img{
+object-fit: contain;
+width: 50px;
+height: 50px;
+
+}
+.navigation-heading h2{
+    margin-left: 20px;
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+}
+.navigation-list{
+    list-style: none;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+   margin-bottom: 0;
+  padding: 0 10vw;
+}
+.navigation-list a{
+text-decoration: none;
+color: white;
+font-size: 22px;
+font-weight: 600;
+}
+.navigation-list a:hover{
+    font-size: 25px;
+}
+.activeNavLink{
+    
+color: #2D9CCA !important ;
+font-size: 28px !important;
+border-bottom: 2px solid #A9ABB8 !important;
+}
