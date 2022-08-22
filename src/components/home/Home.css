@@ -18,13 +18,14 @@
   display: flex;
 
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   height: 50vh;
 }
 .home-head h2 {
   font-size: 60px;
   font-weight: 600;
   color: #f0fbfe;
+
   
 }
 .home-body {
@@ -32,7 +33,9 @@
   justify-content: center;
 }
 .home-body p {
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   color: #f0fbfe;
+  text-align: center;
+  margin-top: 10vh;
 }
