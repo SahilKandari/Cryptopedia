@@ -9,7 +9,8 @@ const Graph = () => {
   const [poolingData, setPoolingpoolingData] = useState({});
   const [timeSpan, setTimeSpan] = useState("1weeks");
   const [timeFormat, setTimeFormat] = useState("1hours");
- 
+  const [loading, setLoading] = useState(false);
+
   //   const [chartpoolingData, setChartpoolingData] = useState({
   //     poolingDatasets: [
   //       {
@@ -20,23 +21,24 @@ const Graph = () => {
   //     ],
   //     // labels: poolingData.values?.map((item, index) => index),
   //   });
- 
+
   // let oneCurrency = true;
   useEffect(() => {
     // if (oneCurrency) {
     //   oneCurrency = false;
-      axios
-        .get(
-          `${chart_api_url}timespan=${timeSpan}&rollingAverage=${timeFormat}&format=json`
-        )
-        .then((res) => {
-          setPoolingpoolingData(res.data);
-          
-        })
-        .catch((err) => {
-          console.log(err.message);
-        });
+    setLoading(true);
+    axios
+      .get(
+        `${chart_api_url}timespan=${timeSpan}&rollingAverage=${timeFormat}&format=json`
+      )
+      .then((res) => {
+        setPoolingpoolingData(res.data);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
     // }
+    setLoading(false);
   }, [timeSpan, timeFormat]);
 
   return (
@@ -102,9 +104,17 @@ const Graph = () => {
           </button>
         </div>
       </div>
-      <div className="col-md-10 col-sm-12 graph-chart">
-        <LineChart chartData={poolingData} />
-      </div>
+      {!loading && (
+        <div className="col-md-10 col-sm-12 graph-chart">
+          {loading && <h3>Loading...</h3>}
+          <LineChart chartData={poolingData} />
+        </div>
+      )}
+      {loading && (
+        <div className="col-md-10 col-sm-12 graph-chart-loading">
+          <h3>Loading...</h3>
+        </div>
+      )}
     </div>
   );
 };
