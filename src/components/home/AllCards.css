@@ -19,10 +19,27 @@
   margin-bottom: 25px;
 }
 .allCards-singleLine p {
+  text-align:justify ;
 }
 .allCards-doubline p {
+  
+  text-align:justify ;
 }
 .cardBox-single {
   max-height: 50vh;
   overflow-y: scroll;
+}
+
+
+@media only screen and (max-width: 767px){
+  .allCards-doubline>:last-child{
+    margin:  8vh 0;
+  }
+}
+
+
+@media only screen and (max-width: 426px){
+
+  .allCards-section{
+    padding:  0 0 0 23px;}
 }

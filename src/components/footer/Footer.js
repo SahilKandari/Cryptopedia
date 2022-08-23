@@ -4,7 +4,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="row footer-section">
-      <div className="col-3 footer-fonts">
+      <div className="col-md-3 col-sm-3 col-xs-6 footer-fonts">
         <a  rel="noreferrer" target="_blank" href="https://www.facebook.com/">
           {" "}
           <i className="fa-brands fa-square-facebook" />
@@ -19,9 +19,9 @@ const Footer = () => {
           <i className="fa-brands fa-square-twitter" />{" "}
         </a>
       </div>
-      <div className="col-4 footer-main">
+      <div className="col-md-4 col-sm-4 col-xs-6  footer-main">
         <img alt="bitcoin" src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=023"></img>
-        <h3>Cryptopedia</h3>
+        <h3><b>Crypto</b>pedia</h3>
       </div>
     </div>
   );

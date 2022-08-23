@@ -41,7 +41,7 @@ const Graph = () => {
 
   return (
     <div className=" row graph-section">
-      <div className="col-2 graph-buttons">
+      <div className="col-md-2 col-sm-12 graph-buttons">
         <div className="row ">
           <button
             onClick={() => setTimeSpan("1days")}
@@ -102,7 +102,7 @@ const Graph = () => {
           </button>
         </div>
       </div>
-      <div className="col-10 graph-chart">
+      <div className="col-md-10 col-sm-12 graph-chart">
         <LineChart chartData={poolingData} />
       </div>
     </div>

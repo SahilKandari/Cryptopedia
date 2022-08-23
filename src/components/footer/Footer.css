@@ -16,6 +16,9 @@ text-decoration: none;
 font-size: 40px;
 color: white
 }
+.footer-fonts a:hover{
+    color: #4C90DF;
+}
 .footer-main{
     display: flex;
 align-items: center;
@@ -31,4 +34,22 @@ color: white;
 margin-left: 10px;
 font-size: 30px;
 
+}
+.footer-main b{
+    font-size: 30px;
+    color:#fab157;
+}
+
+
+@media only screen and (max-width: 426px){
+
+    .footer-section>:first-child{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .footer-section>:last-child{
+    display: none;
+}
+      
 }

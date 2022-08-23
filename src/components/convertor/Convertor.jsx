@@ -57,7 +57,7 @@ const Convertor = () => {
       <div className="col-6 convertor-bitcoin">
         <div className="row ">
           <h3 className="col-12 text-center my-4">Convert to Bitcoin</h3>
-          <h2 className="col-12 text-center my-4">{bitcoinPrice}</h2>
+          <h2 className="col-12 text-center my-4">{bitcoinPrice} BTC</h2>
         </div>
 
         <form onSubmit={formSubmitHandler} className="row convertor-form  ">

@@ -2,7 +2,7 @@
     background-color: #474866;
     padding: 5px 0;
     position: fixed;
-    width: 101vw;
+    width: 103vw;
     opacity: 0.9;
     z-index: 10;
    
@@ -13,11 +13,17 @@
     justify-content:center;
     align-items: center;
 }
+
 .navigation-heading img{
 object-fit: contain;
 width: 50px;
 height: 50px;
 
+}
+.navigation-heading b{
+    font-size: 40px;
+    font-weight: 600;
+    color: #DD861C;
 }
 .navigation-heading h2{
     margin-left: 20px;
@@ -47,4 +53,54 @@ font-weight: 600;
 color: #2D9CCA !important ;
 font-size: 28px !important;
 border-bottom: 2px solid #A9ABB8 !important;
+}
+
+.navigation-list-small{
+    display: none;
+}
+@media only screen and (max-width: 767px){
+    .navigation-list{
+        padding: 0;
+    }
+    }
+
+
+    
+   @media only screen and (max-width: 426px){
+.navigation-list{
+    display: none;
+}
+
+.navigation-list-small{
+    display: flex;
+    flex-direction: column;
+   
+}
+.navigation-list-small li{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+.navigation-list-small a{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+.activeNavLink-small{
+    color: #2D9CCA !important ;
+font-size: 22px !important;
+border-bottom: 2px solid #A9ABB8 !important;
+}
+
+.navigation-heading{
+    justify-content: flex-start;
+    padding-left: 22px;
+
+}
+.navigation-heading h2{
+    font-size: 20px;
+}
+.navigation-heading b{
+    font-size: 22px;
+}
 }

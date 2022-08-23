@@ -33,7 +33,7 @@ const AllCards = () => {
         </Card>
       </div>
       <div className="row allCards-doubline">
-        <Card className="col-5">
+        <Card className="col-md-5 col-sm-12">
           <div className="row">
             <h3>How Does a Blockchain Work?</h3>
           </div>
@@ -53,7 +53,7 @@ const AllCards = () => {
             </p>
           </div>
         </Card>
-        <Card className="col-5 offset-2">
+        <Card className="col-md-5 offset-2 col-sm-12 ">
           <div className="row">
             {" "}
             <h3>How Are Blockchains Used?</h3>
@@ -88,7 +88,7 @@ const AllCards = () => {
         </Card>
       </div>
       <div className="row allCards-doubline">
-        <Card className="col-5">
+        <Card className="col-md-5  col-sm-12">
           <div className="row">
             <h3>Blockchain Decentralization</h3>
           </div>
@@ -124,7 +124,7 @@ const AllCards = () => {
             </p>
           </div>
         </Card>
-        <Card className="col-5 offset-2">
+        <Card className="col-md-5 offset-2  col-sm-12">
           <div className="row">
             {" "}
             <h3>Banking and Finance</h3>
@@ -156,7 +156,7 @@ const AllCards = () => {
         </Card>
       </div>
       <div className="row allCards-doubline">
-        <Card className="col-5">
+        <Card className="col-md-5  col-sm-12">
           <div className="row">
             <h3>Transparency</h3>
           </div>
@@ -181,7 +181,7 @@ const AllCards = () => {
             </p>
           </div>
         </Card>
-        <Card className="col-5 offset-2">
+        <Card className="col-md-5 offset-2  col-sm-12">
           <div className="row">
             {" "}
             <h3>Currency</h3>
@@ -483,8 +483,8 @@ const AllCards = () => {
           </div>
         </Card>
       </div>
-      <div className="row allCards-doubline">
-        <Card className="col-5">
+      <div className="row allCards-doubline ">
+        <Card className="col-md-5  col-sm-12">
           <div className="row">
             <h3>Is Blockchain Secure?</h3>
           </div>
@@ -530,7 +530,7 @@ const AllCards = () => {
             </p>
           </div>
         </Card>
-        <Card className="col-5 offset-2">
+        <Card className="col-md-5 offset-2  col-sm-12">
           <div className="row">
             {" "}
             <h3>Bitcoin vs. Blockchain</h3>

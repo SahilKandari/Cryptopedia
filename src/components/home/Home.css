@@ -1,11 +1,10 @@
 .home-section {
-  background-image: url("https://cdn.pixabay.com/photo/2018/09/05/18/21/bitcoin-3656764_960_720.jpg");
-  /* filter: blur(5px);
-  -webkit-filter: blur(5px); */
+ background-image: url("https://cdn.pixabay.com/photo/2018/09/05/18/21/bitcoin-3656764_960_720.jpg");
+ 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-size: cover;
+  background-size: cover; 
   
 }
 .home-section::-webkit-scrollbar {
@@ -18,7 +17,7 @@
   display: flex;
 
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   height: 50vh;
 }
 .home-head h2 {
@@ -38,4 +37,9 @@
   color: #f0fbfe;
   text-align: center;
   margin-top: 10vh;
+}
+
+@media only screen and (max-width: 426px){
+
+
 }

@@ -13,7 +13,7 @@ const Home = () => {
         </div>
         <div className="row home-body">
           {" "}
-          <div className="col-8">
+          <div className="col-md-8 col-sm-8 col-xs-12">
             <p>
               You can't stop thing's like Bitcoin. It will be everywhere and the
               world will be readjust. World government will have to readjust.

@@ -1,5 +1,5 @@
 .convertor-section {
-  width: 101vw;
+  width: 103vw;
   height: 100vh;
   overflow-y: hidden;
   background-color: #000000;
@@ -13,44 +13,58 @@
 .convertor-image img {
   height: 100vh;
 }
-.convertor-form{
-    display: flex;
-    justify-content: space-around;
+.convertor-form {
+  display: flex;
+  justify-content: space-around;
 }
-.convertor-form input{
-    width: 30% !important;
-    
+.convertor-form input {
+  width: 30% !important;
 }
-.convertor-form select{
-    width: 30% !important;
-    
+.convertor-form select {
+  width: 30% !important;
 }
 .convertor-form select::-webkit-scrollbar {
   display: none;
 }
-.convertor-button{
-display: flex;
-justify-content: center;
-
+.convertor-button {
+  display: flex;
+  justify-content: center;
 }
 
+.convertor-bitcoin {
+  background-color: #cbb779;
 
-.convertor-bitcoin{
-background-color: #CBB779;
-
-border: 2px solid #A9ABB8;
-border-radius: 10px;
-box-shadow: 12px 12px 2px 1px #504927;
-margin-left: 15vw;
-width: 40%;
+  border: 2px solid #a9abb8;
+  border-radius: 10px;
+  margin-left: 15vw;
+  width: 40%;
+  /* box-shadow: 12px 12px 2px 1px #504927; */
+  -webkit-box-shadow: 31px 31px 16px 4px rgb(88, 85, 27);
+  -moz-box-shadow: 31px 31px 16px 4px rgb(88, 85, 27);
+  box-shadow: 31px 31px 16px 4px rgb(88, 85, 27);
 }
-.convertor-bitcoin h2{
-color: #373a2a;
-font-size: 40px;
-
-
+.convertor-bitcoin h2 {
+  color: #373a2a;
+  font-size: 40px;
 }
-.convertor-bitcoin h3{
-   color: #2A2D3A;
-   font-size: 40px;
+.convertor-bitcoin h3 {
+  color: #2a2d3a;
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 767px) {
+  .convertor-bitcoin {
+    width: 60%;
+    margin-left: 5vw;
+  }
+}
+
+@media only screen and (max-width: 426px) {
+  .convertor-section{
+    justify-content: center;
+    overflow-x: hidden;
+  }
+  .convertor-bitcoin{
+    width: 100%;
+  }
 }

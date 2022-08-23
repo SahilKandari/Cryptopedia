@@ -1,18 +1,20 @@
-.cardBox{
-    border: 2px solid #A9ABB8;
-    border-radius: 10px;
-    padding: 10px;
-    max-height: 70vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    background-color: #a6e4fa;
-    box-shadow: 12px 12px 2px 1px #363757;
+.cardBox {
+  /* border: 2px solid #a9abb8; */
+  border-radius: 10px;
+  padding: 20px;
+  max-height: 70vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #a6e4fa;
+
+  -webkit-box-shadow: 31px 31px 16px 4px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 31px 31px 16px 4px rgba(0, 0, 0, 0.69);
+  box-shadow: 31px 31px 16px 4px rgba(0, 0, 0, 0.69);
 }
 .cardBox::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
-.cardBox:hover{
-   background-color: #f2fbff;
-margin-top: -2vh
-   ;
+.cardBox:hover {
+  background-color: #f2fbff;
+  margin-top: -2vh;
 }
