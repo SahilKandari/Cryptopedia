@@ -29,14 +29,16 @@ const Graph = () => {
     setLoading(true);
     axios
       .get(
-        `${chart_api_url}timespan=${timeSpan}&rollingAverage=${timeFormat}&format=json`
+        `${chart_api_url}timespan=${timeSpan}&rollingAverage=${timeFormat}&format=json&cors=true`
       )
       .then((res) => {
         setPoolingpoolingData(res.data);
+        console.log("res.data",res.data);
       })
       .catch((err) => {
-        console.log(err.message);
+        console.log("error",err.message);
       });
+
     // }
     setLoading(false);
   }, [timeSpan, timeFormat]);

@@ -12,7 +12,7 @@ const Convertor = () => {
 
   const getPrice = () => {
     axios
-      .get(`${convertor_api_url}${countryChange}&value=${priceChange}`)
+      .get(`${convertor_api_url}${countryChange}&value=${priceChange}&cors=true`)
       .then((res) => {
         setBitcoinPrice(res.data);
       })
